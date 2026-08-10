@@ -1,0 +1,162 @@
+.stats-section {
+  min-height: 75vh;
+  padding: 90px 8%;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+}
+
+.stats-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.stats-container h1 {
+  color: #0f172a;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.stats-container > p {
+  max-width: 760px;
+  color: #64748b;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 34px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+.stats-card {
+  padding: 28px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 28px;
+  box-shadow: 0 16px 42px rgba(15, 23, 42, 0.08);
+}
+
+.stats-card svg {
+  width: 52px;
+  height: 52px;
+  padding: 14px;
+  margin-bottom: 18px;
+  background-color: #0f172a;
+  color: #ffffff;
+  border-radius: 18px;
+}
+
+.stats-card span {
+  display: block;
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.stats-card strong {
+  color: #0f172a;
+  font-size: 2.1rem;
+}
+
+.stats-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.stats-panel {
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 28px;
+  box-shadow: 0 16px 42px rgba(15, 23, 42, 0.08);
+}
+
+.stats-panel h3 {
+  color: #0f172a;
+  font-size: 1.35rem;
+  margin-bottom: 20px;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.category-list span {
+  padding: 10px 14px;
+  background-color: #f1f5f9;
+  color: #334155;
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.price-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.price-stats div {
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 20px;
+}
+
+.price-stats span {
+  display: block;
+  color: #64748b;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.price-stats strong {
+  color: #0f172a;
+  font-size: 1.8rem;
+}
+
+.stats-loading {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 28px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 16px 42px rgba(15, 23, 42, 0.08);
+}
+
+.stats-loading h3 {
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.stats-loading p {
+  color: #64748b;
+}
+
+@media (max-width: 1000px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .stats-section {
+    padding: 70px 6%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price-stats {
+    grid-template-columns: 1fr;
+  }
+}

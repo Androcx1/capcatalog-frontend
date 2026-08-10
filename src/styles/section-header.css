@@ -1,0 +1,27 @@
+.section-header {
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+
+.section-header span {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #1d4ed8;
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  color: #0f172a;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.section-header p {
+  color: #64748b;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
